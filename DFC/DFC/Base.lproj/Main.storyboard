@@ -16,8 +16,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="af9-K6-pqZ" customClass="DFCTextField" customModule="DFC" customModuleProvider="target">
+                                <rect key="frame" x="35" y="414" width="344" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MXX-Dx-SGA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yCg-pe-izU" customClass="DFCTextField" customModule="DFC" customModuleProvider="target">
+                                <rect key="frame" x="35" y="254" width="344" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="B2d-wM-MaE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wVk-G1-1XY" customClass="DFCTextField" customModule="DFC" customModuleProvider="target">
+                                <rect key="frame" x="35" y="334" width="344" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ng6-Qu-pCn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kt4-dW-mXc" customClass="DFCTextField" customModule="DFC" customModuleProvider="target">
+                                <rect key="frame" x="35" y="494" width="344" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FTI-Hn-SuL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYg-S7-pfX" customClass="DFCButton" customModule="DFC" customModuleProvider="target">
-                                <rect key="frame" x="125.5" y="544" width="163" height="30"/>
+                                <rect key="frame" x="126" y="574" width="163" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="163" id="qvx-16-xt6"/>
                                     <constraint firstAttribute="height" constant="39" id="s3b-Fv-mic"/>
@@ -28,12 +60,30 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Kt4-dW-mXc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="0GT-Ts-U15"/>
                             <constraint firstItem="QYg-S7-pfX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BD1-ww-1TV"/>
-                            <constraint firstItem="QYg-S7-pfX" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="M0h-ug-1Dd"/>
-                            <constraint firstItem="QYg-S7-pfX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="500" id="xeR-d1-JM5"/>
+                            <constraint firstItem="yCg-pe-izU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="DKN-Ae-RIU"/>
+                            <constraint firstItem="af9-K6-pqZ" firstAttribute="top" secondItem="wVk-G1-1XY" secondAttribute="bottom" constant="30" id="F19-Hc-gQd"/>
+                            <constraint firstItem="af9-K6-pqZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="HbZ-Mu-rCC"/>
+                            <constraint firstItem="yCg-pe-izU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Nr2-6T-hYz"/>
+                            <constraint firstItem="QYg-S7-pfX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="530" id="P4d-sZ-XlI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kt4-dW-mXc" secondAttribute="trailing" constant="35" id="PZb-Y0-Bdw"/>
+                            <constraint firstItem="wVk-G1-1XY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="Vbm-3R-sat"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wVk-G1-1XY" secondAttribute="trailing" constant="35" id="VfH-Nq-BPx"/>
+                            <constraint firstItem="QYg-S7-pfX" firstAttribute="top" secondItem="Kt4-dW-mXc" secondAttribute="bottom" constant="30" id="aq8-7D-IcZ"/>
+                            <constraint firstItem="Kt4-dW-mXc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cUB-ex-BVQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yCg-pe-izU" secondAttribute="trailing" constant="35" id="g2J-Hk-Y7Y"/>
+                            <constraint firstItem="wVk-G1-1XY" firstAttribute="top" secondItem="yCg-pe-izU" secondAttribute="bottom" constant="30" id="icY-EA-MSB"/>
+                            <constraint firstItem="wVk-G1-1XY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jF6-rw-hx8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="af9-K6-pqZ" secondAttribute="trailing" constant="35" id="rcc-Eu-QsX"/>
+                            <constraint firstItem="Kt4-dW-mXc" firstAttribute="top" secondItem="af9-K6-pqZ" secondAttribute="bottom" constant="30" id="uay-gR-aF7"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ConfrimPasswordTextField" destination="Kt4-dW-mXc" id="Wwp-gk-xUh"/>
+                        <outlet property="EmailTextField" destination="wVk-G1-1XY" id="S7i-R9-Hxu"/>
+                        <outlet property="NameTextField" destination="yCg-pe-izU" id="3sy-jf-QgR"/>
+                        <outlet property="PasswordTextField" destination="af9-K6-pqZ" id="r1f-NI-KVL"/>
                         <outlet property="TestButton" destination="QYg-S7-pfX" id="wPg-fX-cRU"/>
                     </connections>
                 </viewController>
