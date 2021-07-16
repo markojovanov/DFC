@@ -7,31 +7,34 @@ class ViewController: UIViewController {
                              color: .link,
                              backgroundColor: .init(red: 0, green: 0, blue: 0, alpha: 0),
                              cornerRadius: 0)
+        }
     }
-}
     @IBOutlet var NameTextField: DFCTextField!{
-        didSet{
+        didSet {
             NameTextField.configure(placeHolder: "Име",
-                                    secureTextEntry: false)
+                                    secureTextEntry: false,
+                                    fontColor: .darkGray)
         }
     }
     @IBOutlet var EmailTextField: DFCTextField! {
-        didSet{
+        didSet {
             EmailTextField.configure(placeHolder: "Емаил",
-                                     secureTextEntry: false)
+                                     secureTextEntry: false,
+                                     fontColor: .darkGray)
         }
     }
-    
     @IBOutlet var PasswordTextField: DFCTextField! {
-        didSet{
+        didSet {
             PasswordTextField.configure(placeHolder: "Лозинка",
-                                        secureTextEntry: true)
+                                        secureTextEntry: true,
+                                        fontColor: .darkGray)
         }
     }
     @IBOutlet var ConfrimPasswordTextField: DFCTextField! {
-        didSet{
+        didSet {
             ConfrimPasswordTextField.configure(placeHolder: "Потврди лозинка",
-                                               secureTextEntry: true)
+                                               secureTextEntry: true,
+                                               fontColor: .darkGray)
         }
     }
     @IBOutlet var BigLoginButton: DFCButton! {
@@ -42,7 +45,6 @@ class ViewController: UIViewController {
                                  ,cornerRadius: 18)
         }
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemGray5

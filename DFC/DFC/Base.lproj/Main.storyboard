@@ -49,9 +49,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYg-S7-pfX" customClass="DFCButton" customModule="DFC" customModuleProvider="target">
-                                <rect key="frame" x="184" y="574" width="46" height="39"/>
+                                <rect key="frame" x="107" y="574" width="200" height="39"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="qvx-16-xt6"/>
+                                    <constraint firstAttribute="width" constant="200" id="qvx-16-xt6"/>
                                     <constraint firstAttribute="height" priority="999" constant="39" id="s3b-Fv-mic"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -143,7 +143,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wh7-7e-siq" customClass="DFCButton" customModule="DFC" customModuleProvider="target">
                                 <rect key="frame" x="107" y="510" width="200" height="39"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="4g4-sV-MYq"/>
+                                    <constraint firstAttribute="width" constant="200" id="4g4-sV-MYq"/>
                                     <constraint firstAttribute="height" priority="999" constant="39" id="YfT-3a-hc2"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>

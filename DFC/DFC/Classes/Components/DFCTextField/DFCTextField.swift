@@ -2,21 +2,21 @@ import UIKit
 
 public class DFCTextField: UITextField {
     public func configure(placeHolder: String,
-                          secureTextEntry: Bool) {
+                          secureTextEntry: Bool,
+                          fontColor: UIColor) {
         configurePlaceHolder(placeHolder: placeHolder)
         configureSecureTextEntry(secureTextEntry: secureTextEntry)
+        configureFontColor(fontColor: fontColor)
         self.autocorrectionType = .no;
-   //     configureFont(font: font)
     }
-    private func configurePlaceHolder(placeHolder: String){
-        self.attributedPlaceholder =  NSAttributedString(string: placeHolder, attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
+    private func configurePlaceHolder(placeHolder: String) {
+        self.attributedPlaceholder = NSAttributedString(string: placeHolder)
     }
-    private func configureSecureTextEntry(secureTextEntry: Bool){
+    private func configureSecureTextEntry(secureTextEntry: Bool) {
         self.isSecureTextEntry = secureTextEntry
     }
-//    private func configureFont(font: UIFont){
-//        font.withSize(15)
-//
-//    }
+    private func configureFontColor(fontColor: UIColor) {
+        self.textColor = fontColor
+    }
     
 }
