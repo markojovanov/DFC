@@ -1,6 +1,11 @@
 import UIKit
 
-class ViewController: UIViewController {
+class RegisterViewController: UIViewController {
+    public static func create() -> UIViewController {
+        let bundle = Bundle(for: RegisterViewController.self)
+        let controller = UIStoryboard(name: "RegisterViewController", bundle: bundle).instantiateInitialViewController() as! RegisterViewController
+        return controller
+    }
     @IBOutlet var LoginButton: DFCButton! {
     didSet {
         LoginButton.configure(title: "Најави се",
@@ -48,6 +53,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemGray5
+        tabBarItem = UITabBarItem(title: "Register", image: UIImage(named: "Home"), tag: 0)
     }
 }
 

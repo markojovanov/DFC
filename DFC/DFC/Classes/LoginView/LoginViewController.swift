@@ -1,18 +1,15 @@
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var EmailTextField: DFCTextField! {
         didSet {
-            EmailTextField.configure(placeHolder: "Емаил",
-                                     secureTextEntry: false,
-                                     fontColor: .darkGray)
+            EmailTextField.configure(placeHolder: "Емаил")
         }
     }
     @IBOutlet var PasswordTextField: DFCTextField! {
         didSet {
             PasswordTextField.configure(placeHolder: "Лозинка",
-                                        secureTextEntry: true,
-                                        fontColor: .darkGray)
+                                        secureTextEntry: true)
         }
     }
     @IBOutlet var LoginButton: DFCButton! {
@@ -34,5 +31,18 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemGray5
+        setUpDelegates()
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        hideKeyboard()
+    }
+    private func setUpDelegates() {
+        EmailTextField.delegate = self
+        PasswordTextField.delegate = self
+    }
+    private func hideKeyboard() {
+        EmailTextField.endEditing(true)
+        PasswordTextField.endEditing(true)
     }
 }
