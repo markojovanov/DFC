@@ -2,9 +2,9 @@ import UIKit
 
 public class DFCButton: UIButton {
     public func configure(title: String,
-                          color: UIColor,
-                          backgroundColor: CGColor,
-                          cornerRadius: CGFloat) {
+                          color: UIColor = .white,
+                          backgroundColor: CGColor = .init(red: 0.37, green: 0.18, blue: 0.67, alpha: 1),
+                          cornerRadius: CGFloat = 18) {
         configureTitle(title: title)
         configureColor(color: color)
         configureBackgroundColor(backgroundColor: backgroundColor)

@@ -85,8 +85,8 @@
                     <connections>
                         <outlet property="BigLoginButton" destination="SET-RO-VE9" id="d6K-UI-v9T"/>
                         <outlet property="EmailTextField" destination="OGH-FK-DQC" id="0Zc-zv-aPL"/>
-                        <outlet property="LoginButton" destination="Nmk-c0-q3Y" id="Heh-13-aLf"/>
                         <outlet property="PasswordTextField" destination="Noz-NE-1lQ" id="Ecj-wO-XXj"/>
+                        <outlet property="RegisterButton" destination="Nmk-c0-q3Y" id="Heh-13-aLf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w6X-Or-mLY" sceneMemberID="firstResponder"/>

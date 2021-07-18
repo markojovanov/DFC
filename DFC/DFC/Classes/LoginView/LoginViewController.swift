@@ -1,6 +1,11 @@
 import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
+    public static func create() -> UIViewController {
+        let bundle = Bundle(for: LoginViewController.self)
+        let controller = UIStoryboard(name: "LoginViewController", bundle: bundle).instantiateInitialViewController() as! LoginViewController
+        return controller
+    }
     @IBOutlet var EmailTextField: DFCTextField! {
         didSet {
             EmailTextField.configure(placeHolder: "Емаил")
@@ -12,9 +17,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                                         secureTextEntry: true)
         }
     }
-    @IBOutlet var LoginButton: DFCButton! {
+    @IBOutlet var RegisterButton: DFCButton! {
     didSet {
-        LoginButton.configure(title: "Регистрирај се",
+        RegisterButton.configure(title: "Регистрирај се",
                              color: .link,
                              backgroundColor: .init(red: 0, green: 0, blue: 0, alpha: 0),
                              cornerRadius: 0)
@@ -22,15 +27,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     @IBOutlet var BigLoginButton: DFCButton! {
         didSet {
-            BigLoginButton.configure(title: "Најави се",
-                                 color: .white,
-                                 backgroundColor: .init(red: 0.37, green: 0.18, blue: 0.67, alpha: 1)
-                                 ,cornerRadius: 18)
+            BigLoginButton.configure(title: "Најави се")
         }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemGray5
+        tabBarItem = UITabBarItem(title: "Login", image: UIImage(named: "Home"), tag: 0)
         setUpDelegates()
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

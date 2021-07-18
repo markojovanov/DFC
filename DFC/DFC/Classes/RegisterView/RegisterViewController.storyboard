@@ -63,13 +63,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Веќе си регистиран?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTB-xc-j9h">
-                                <rect key="frame" x="132" y="694" width="150.5" height="18"/>
+                                <rect key="frame" x="132" y="656" width="150.5" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcB-TY-5Rf" customClass="DFCButton" customModule="DFC" customModuleProvider="target">
-                                <rect key="frame" x="188" y="714" width="38" height="30"/>
+                                <rect key="frame" x="188" y="676" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
                             </button>
                         </subviews>
@@ -92,24 +92,24 @@
                             <constraint firstItem="JgM-Gq-CcC" firstAttribute="leading" secondItem="m8p-as-FAx" secondAttribute="leading" constant="35" id="WaS-yr-OSc"/>
                             <constraint firstItem="FFW-Cu-xC4" firstAttribute="top" secondItem="JgM-Gq-CcC" secondAttribute="bottom" constant="30" id="YhT-Gx-PJz"/>
                             <constraint firstItem="JgM-Gq-CcC" firstAttribute="top" secondItem="z3W-Qt-yRN" secondAttribute="bottom" constant="30" id="arV-rl-XxH"/>
-                            <constraint firstItem="m8p-as-FAx" firstAttribute="bottom" secondItem="OcB-TY-5Rf" secondAttribute="bottom" constant="118" id="jbv-F0-e8K"/>
+                            <constraint firstItem="cTB-xc-j9h" firstAttribute="top" secondItem="FFW-Cu-xC4" secondAttribute="bottom" constant="43" id="ggb-Z4-rwf"/>
                             <constraint firstItem="FFW-Cu-xC4" firstAttribute="top" secondItem="m8p-as-FAx" secondAttribute="top" constant="530" id="kby-5r-nBv"/>
                             <constraint firstItem="m8p-as-FAx" firstAttribute="trailing" secondItem="z3W-Qt-yRN" secondAttribute="trailing" constant="35" id="n4Z-Ut-fOe"/>
                             <constraint firstItem="Bdb-PR-How" firstAttribute="top" secondItem="m8p-as-FAx" secondAttribute="top" constant="134" id="odZ-bG-Lnn"/>
+                            <constraint firstItem="OcB-TY-5Rf" firstAttribute="top" secondItem="FFW-Cu-xC4" secondAttribute="bottom" constant="63" id="qth-fd-WCE"/>
                             <constraint firstItem="cTB-xc-j9h" firstAttribute="centerX" secondItem="m8p-as-FAx" secondAttribute="centerX" id="rRE-1g-1Ag"/>
                             <constraint firstItem="z3W-Qt-yRN" firstAttribute="top" secondItem="fnf-9G-F6Y" secondAttribute="bottom" constant="30" id="rwL-d2-qLx"/>
-                            <constraint firstItem="m8p-as-FAx" firstAttribute="bottom" secondItem="cTB-xc-j9h" secondAttribute="bottom" constant="150" id="tXh-Zd-zS0"/>
                             <constraint firstItem="fnf-9G-F6Y" firstAttribute="top" secondItem="tBy-2w-5OJ" secondAttribute="bottom" constant="30" id="tno-la-Q20"/>
                             <constraint firstItem="OcB-TY-5Rf" firstAttribute="centerX" secondItem="m8p-as-FAx" secondAttribute="centerX" id="yn0-I2-j95"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="BigLoginButton" destination="FFW-Cu-xC4" id="4xG-ug-u35"/>
                         <outlet property="ConfrimPasswordTextField" destination="JgM-Gq-CcC" id="aWz-98-ov2"/>
                         <outlet property="EmailTextField" destination="fnf-9G-F6Y" id="coV-ws-oDO"/>
                         <outlet property="LoginButton" destination="OcB-TY-5Rf" id="iEi-na-qaw"/>
                         <outlet property="NameTextField" destination="tBy-2w-5OJ" id="ha3-sP-dD2"/>
                         <outlet property="PasswordTextField" destination="z3W-Qt-yRN" id="WEY-wC-two"/>
+                        <outlet property="RegisterButton" destination="FFW-Cu-xC4" id="4xG-ug-u35"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lxW-Ny-pfg" sceneMemberID="firstResponder"/>
