@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z6j-Wy-7Sy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Routine Setter Controller-->
+        <scene sceneID="odN-sb-N6f">
+            <objects>
+                <viewController id="hlE-e4-vFH" customClass="RoutineSetterController" customModule="DFC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j8H-fj-13e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Која е твојата цел ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YjA-9b-mQg" customClass="DFCLabel" customModule="DFC" customModuleProvider="target">
+                                <rect key="frame" x="88" y="192" width="238" height="29"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5d-dO-Gjl" customClass="DFCSetterButton" customModule="DFC" customModuleProvider="target">
+                                <rect key="frame" x="32" y="296" width="350" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="GDC-LU-3Hv"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="350" id="o7V-mG-Cxq"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fiq-S6-Ix3" customClass="DFCSetterButton" customModule="DFC" customModuleProvider="target">
+                                <rect key="frame" x="32" y="401" width="350" height="76"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JH0-XS-oZC" customClass="DFCSetterButton" customModule="DFC" customModuleProvider="target">
+                                <rect key="frame" x="32" y="507" width="350" height="76"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJZ-5S-rwP" customClass="DFCSetterButton" customModule="DFC" customModuleProvider="target">
+                                <rect key="frame" x="32" y="613" width="350" height="76"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wcr-e9-Zr6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fiq-S6-Ix3" firstAttribute="width" secondItem="z5d-dO-Gjl" secondAttribute="width" id="2dA-hy-ork"/>
+                            <constraint firstItem="Fiq-S6-Ix3" firstAttribute="top" secondItem="z5d-dO-Gjl" secondAttribute="bottom" constant="30" id="2ng-xS-Aw4"/>
+                            <constraint firstItem="Fiq-S6-Ix3" firstAttribute="height" secondItem="z5d-dO-Gjl" secondAttribute="height" multiplier="1.0125" id="4hx-Wy-hIT"/>
+                            <constraint firstItem="JH0-XS-oZC" firstAttribute="top" secondItem="Fiq-S6-Ix3" secondAttribute="bottom" constant="30" id="5vv-tn-pC0"/>
+                            <constraint firstItem="YjA-9b-mQg" firstAttribute="centerX" secondItem="Wcr-e9-Zr6" secondAttribute="centerX" id="BUJ-hW-9Dc"/>
+                            <constraint firstItem="Fiq-S6-Ix3" firstAttribute="centerX" secondItem="Wcr-e9-Zr6" secondAttribute="centerX" id="Fom-7Z-NKE"/>
+                            <constraint firstItem="JH0-XS-oZC" firstAttribute="height" secondItem="Fiq-S6-Ix3" secondAttribute="height" id="Hgc-Qt-9NL"/>
+                            <constraint firstItem="JH0-XS-oZC" firstAttribute="centerX" secondItem="Wcr-e9-Zr6" secondAttribute="centerX" id="KpC-af-RkN"/>
+                            <constraint firstItem="z5d-dO-Gjl" firstAttribute="centerX" secondItem="Wcr-e9-Zr6" secondAttribute="centerX" id="NGg-Nr-nhN"/>
+                            <constraint firstItem="Wcr-e9-Zr6" firstAttribute="trailing" secondItem="z5d-dO-Gjl" secondAttribute="trailing" constant="32" id="PNQ-PP-c9U"/>
+                            <constraint firstItem="YjA-9b-mQg" firstAttribute="top" secondItem="Wcr-e9-Zr6" secondAttribute="top" constant="104" id="PTb-bo-65L"/>
+                            <constraint firstItem="vJZ-5S-rwP" firstAttribute="top" secondItem="JH0-XS-oZC" secondAttribute="bottom" constant="30" id="YFn-CX-g6c"/>
+                            <constraint firstItem="vJZ-5S-rwP" firstAttribute="centerX" secondItem="Wcr-e9-Zr6" secondAttribute="centerX" id="cgY-dS-9IZ"/>
+                            <constraint firstItem="z5d-dO-Gjl" firstAttribute="leading" secondItem="Wcr-e9-Zr6" secondAttribute="leading" constant="32" id="igb-0J-Ak4"/>
+                            <constraint firstItem="Wcr-e9-Zr6" firstAttribute="trailing" secondItem="YjA-9b-mQg" secondAttribute="trailing" constant="88" id="kcK-Dh-lRc"/>
+                            <constraint firstItem="vJZ-5S-rwP" firstAttribute="height" secondItem="JH0-XS-oZC" secondAttribute="height" id="kdA-TT-9Yg"/>
+                            <constraint firstItem="YjA-9b-mQg" firstAttribute="leading" secondItem="Wcr-e9-Zr6" secondAttribute="leading" constant="88" id="n4A-Os-Akx"/>
+                            <constraint firstItem="vJZ-5S-rwP" firstAttribute="width" secondItem="JH0-XS-oZC" secondAttribute="width" id="oLZ-3a-AuG"/>
+                            <constraint firstItem="JH0-XS-oZC" firstAttribute="width" secondItem="Fiq-S6-Ix3" secondAttribute="width" id="p1I-Ul-jrA"/>
+                            <constraint firstItem="z5d-dO-Gjl" firstAttribute="top" secondItem="YjA-9b-mQg" secondAttribute="bottom" constant="75" id="yz2-Eh-APd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VW2-AK-YBT"/>
+                    <connections>
+                        <outlet property="AthleteButton" destination="vJZ-5S-rwP" id="DqJ-ZH-dbc"/>
+                        <outlet property="GainMusclesButton" destination="JH0-XS-oZC" id="Eal-ro-I0Q"/>
+                        <outlet property="GoalLabel" destination="YjA-9b-mQg" id="Mfs-wn-Lts"/>
+                        <outlet property="StayFitButton" destination="Fiq-S6-Ix3" id="mR8-2h-SaL"/>
+                        <outlet property="WeightLossButton" destination="z5d-dO-Gjl" id="ywg-aY-xDr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Vy-mb-1Zw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="57.589285714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dAh-o6-BvT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Z6j-Wy-7Sy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wJe-MV-aiy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hlE-e4-vFH" kind="relationship" relationship="rootViewController" id="sJ8-yp-YRi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gEP-e4-SFH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="57.589285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

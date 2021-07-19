@@ -15,6 +15,10 @@
 		28380517268F52FC00960988 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28380516268F52FC00960988 /* RegisterViewController.swift */; };
 		2838051C268F530500960988 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2838051B268F530500960988 /* Assets.xcassets */; };
 		2838051F268F530500960988 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2838051D268F530500960988 /* LaunchScreen.storyboard */; };
+		288D40EB26A59DF40021ED89 /* DFCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288D40EA26A59DF40021ED89 /* DFCLabel.swift */; };
+		288D40F526A5A5270021ED89 /* RoutineSetterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288D40F426A5A5270021ED89 /* RoutineSetterController.swift */; };
+		288D40F826A5A53B0021ED89 /* RoutineSetterController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 288D40F726A5A53B0021ED89 /* RoutineSetterController.storyboard */; };
+		288D40FB26A5C8BA0021ED89 /* DFCSetterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288D40FA26A5C8BA0021ED89 /* DFCSetterButton.swift */; };
 		28A42B3426A1B3FC00993B8D /* TabController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A42B3326A1B3FC00993B8D /* TabController.storyboard */; };
 		28A42B3726A1B42300993B8D /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A42B3626A1B42300993B8D /* TabController.swift */; };
 		28A42B3D26A1B5DC00993B8D /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A42B3C26A1B5DC00993B8D /* RegisterViewController.storyboard */; };
@@ -32,6 +36,10 @@
 		2838051B268F530500960988 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2838051E268F530500960988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28380520268F530500960988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		288D40EA26A59DF40021ED89 /* DFCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFCLabel.swift; sourceTree = "<group>"; };
+		288D40F426A5A5270021ED89 /* RoutineSetterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineSetterController.swift; sourceTree = "<group>"; };
+		288D40F726A5A53B0021ED89 /* RoutineSetterController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoutineSetterController.storyboard; sourceTree = "<group>"; };
+		288D40FA26A5C8BA0021ED89 /* DFCSetterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFCSetterButton.swift; sourceTree = "<group>"; };
 		28A42B3326A1B3FC00993B8D /* TabController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabController.storyboard; sourceTree = "<group>"; };
 		28A42B3626A1B42300993B8D /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		28A42B3C26A1B5DC00993B8D /* RegisterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
@@ -52,6 +60,7 @@
 		2800866526987B7F003A8128 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				288D40F226A5A4DD0021ED89 /* RegisterSettersViews */,
 				28A42B3B26A1B5C000993B8D /* RegisterView */,
 				28A42B3A26A1B5B600993B8D /* LoginView */,
 				28A42B3226A1B3DB00993B8D /* TabController */,
@@ -63,6 +72,7 @@
 		2800866626987B8B003A8128 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				288D40E926A59DE30021ED89 /* DFCLabel */,
 				2800868D269F17AA003A8128 /* DFCTextField */,
 				2800866726987BA0003A8128 /* DFCButton */,
 			);
@@ -73,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				2800866826987BBD003A8128 /* DFCButton.swift */,
+				288D40FA26A5C8BA0021ED89 /* DFCSetterButton.swift */,
 			);
 			path = DFCButton;
 			sourceTree = "<group>";
@@ -112,6 +123,31 @@
 				28380520268F530500960988 /* Info.plist */,
 			);
 			path = DFC;
+			sourceTree = "<group>";
+		};
+		288D40E926A59DE30021ED89 /* DFCLabel */ = {
+			isa = PBXGroup;
+			children = (
+				288D40EA26A59DF40021ED89 /* DFCLabel.swift */,
+			);
+			path = DFCLabel;
+			sourceTree = "<group>";
+		};
+		288D40F226A5A4DD0021ED89 /* RegisterSettersViews */ = {
+			isa = PBXGroup;
+			children = (
+				288D40F326A5A4F00021ED89 /* RoutineSetter */,
+			);
+			path = RegisterSettersViews;
+			sourceTree = "<group>";
+		};
+		288D40F326A5A4F00021ED89 /* RoutineSetter */ = {
+			isa = PBXGroup;
+			children = (
+				288D40F426A5A5270021ED89 /* RoutineSetterController.swift */,
+				288D40F726A5A53B0021ED89 /* RoutineSetterController.storyboard */,
+			);
+			path = RoutineSetter;
 			sourceTree = "<group>";
 		};
 		28A42B3226A1B3DB00993B8D /* TabController */ = {
@@ -198,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				288D40F826A5A53B0021ED89 /* RoutineSetterController.storyboard in Resources */,
 				2838051F268F530500960988 /* LaunchScreen.storyboard in Resources */,
 				2838051C268F530500960988 /* Assets.xcassets in Resources */,
 				28A42B3D26A1B5DC00993B8D /* RegisterViewController.storyboard in Resources */,
@@ -213,12 +250,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				288D40FB26A5C8BA0021ED89 /* DFCSetterButton.swift in Sources */,
 				28A42B3726A1B42300993B8D /* TabController.swift in Sources */,
 				280086B526A09FB5003A8128 /* LoginViewController.swift in Sources */,
+				288D40F526A5A5270021ED89 /* RoutineSetterController.swift in Sources */,
 				28380517268F52FC00960988 /* RegisterViewController.swift in Sources */,
 				28380513268F52FC00960988 /* AppDelegate.swift in Sources */,
 				28380515268F52FC00960988 /* SceneDelegate.swift in Sources */,
 				2800868F269F17C2003A8128 /* DFCTextField.swift in Sources */,
+				288D40EB26A59DF40021ED89 /* DFCLabel.swift in Sources */,
 				2800866926987BBD003A8128 /* DFCButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

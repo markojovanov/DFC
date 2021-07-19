@@ -11,7 +11,7 @@
         <!--Register View Controller-->
         <scene sceneID="yXe-sd-G7x">
             <objects>
-                <viewController id="SDx-yD-30Q" customClass="RegisterViewController" customModule="DFC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Register" id="SDx-yD-30Q" customClass="RegisterViewController" customModule="DFC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7su-nz-E36">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,13 +56,13 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="РЕГИСТРИРАЈ СЕ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdb-PR-How">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="РЕГИСТРИРАЈ СЕ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdb-PR-How" customClass="DFCLabel" customModule="DFC" customModuleProvider="target">
                                 <rect key="frame" x="75" y="178" width="264" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Веќе си регистиран?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTB-xc-j9h">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Веќе си регистиран?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTB-xc-j9h" customClass="DFCLabel" customModule="DFC" customModuleProvider="target">
                                 <rect key="frame" x="132" y="656" width="150.5" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
@@ -104,12 +104,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="AlreadyRegisterLabel" destination="cTB-xc-j9h" id="XwP-Pe-8Dc"/>
                         <outlet property="ConfrimPasswordTextField" destination="JgM-Gq-CcC" id="aWz-98-ov2"/>
                         <outlet property="EmailTextField" destination="fnf-9G-F6Y" id="coV-ws-oDO"/>
                         <outlet property="LoginButton" destination="OcB-TY-5Rf" id="iEi-na-qaw"/>
                         <outlet property="NameTextField" destination="tBy-2w-5OJ" id="ha3-sP-dD2"/>
                         <outlet property="PasswordTextField" destination="z3W-Qt-yRN" id="WEY-wC-two"/>
                         <outlet property="RegisterButton" destination="FFW-Cu-xC4" id="4xG-ug-u35"/>
+                        <outlet property="RegisterLabel" destination="Bdb-PR-How" id="ZUN-Qm-IYF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lxW-Ny-pfg" sceneMemberID="firstResponder"/>

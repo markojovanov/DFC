@@ -6,6 +6,16 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         let controller = UIStoryboard(name: "RegisterViewController", bundle: bundle).instantiateInitialViewController() as! RegisterViewController
         return controller
     }
+    @IBOutlet var AlreadyRegisterLabel: DFCLabel! {
+        didSet {
+            AlreadyRegisterLabel.configure(title: "Веќе си регистриран?")
+        }
+    }
+    @IBOutlet var RegisterLabel: DFCLabel! {
+        didSet{
+            RegisterLabel.configure(title: "РЕГИСТРИРАЈ СЕ")
+        }
+    }
     @IBOutlet var LoginButton: DFCButton! {
     didSet {
         LoginButton.configure(title: "Најави се",
@@ -43,8 +53,8 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGray5
-        tabBarItem = UITabBarItem(title: "Register", image: UIImage(named: "Home"), tag: 0)
+        view.backgroundColor = UIColor(red:0.91, green:0.91, blue:0.91, alpha:1.0)
+        tabBarItem = UITabBarItem(title: "Register", image: UIImage(named: "Register"), tag: 0)
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)

@@ -4,7 +4,9 @@ public class TabController : UITabBarController {
     public override func viewDidLoad() {
         let registerViewController = RegisterViewController.create()
         let loginViewController = LoginViewController.create()
-        insertTabBars(viewControllers: [registerViewController,loginViewController])
+        //Delete line 8 -> Not needing TabBarController
+        let routineSetterController = RoutineSetterController.create()
+        insertTabBars(viewControllers: [registerViewController,loginViewController,routineSetterController])
     }
     private func insertTabBars(viewControllers: [UIViewController]) {
         self.viewControllers = viewControllers

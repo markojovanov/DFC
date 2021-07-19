@@ -6,6 +6,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let controller = UIStoryboard(name: "LoginViewController", bundle: bundle).instantiateInitialViewController() as! LoginViewController
         return controller
     }
+    @IBOutlet var LoginLabel: DFCLabel! {
+        didSet {
+            LoginLabel.configure(title: "НАЈАВИ СЕ")
+        }
+    }
+    @IBOutlet var NotRegistered: DFCLabel! {
+        didSet {
+        NotRegistered.configure(title: "Немаш кориснички профил?")
+    }
+}
     @IBOutlet var EmailTextField: DFCTextField! {
         didSet {
             EmailTextField.configure(placeHolder: "Емаил")
@@ -32,8 +42,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGray5
-        tabBarItem = UITabBarItem(title: "Login", image: UIImage(named: "Home"), tag: 0)
+        view.backgroundColor = UIColor(red:0.91, green:0.91, blue:0.91, alpha:1.0)
+        tabBarItem = UITabBarItem(title: "Login", image: UIImage(named: "Login"), tag: 0)
         setUpDelegates()
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

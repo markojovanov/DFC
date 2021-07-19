@@ -33,36 +33,40 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SET-RO-VE9" customClass="DFCButton" customModule="DFC" customModuleProvider="target">
-                                <rect key="frame" x="107" y="510" width="200" height="39"/>
+                                <rect key="frame" x="127" y="510" width="160" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="999" constant="39" id="2bI-Ta-DxP"/>
-                                    <constraint firstAttribute="width" constant="200" id="ymh-Tl-p6J"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="160" id="ymh-Tl-p6J"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="НАЈАВИ СЕ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zr-fM-YI1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="НАЈАВИ СЕ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zr-fM-YI1" customClass="DFCLabel" customModule="DFC" customModuleProvider="target">
                                 <rect key="frame" x="75" y="195" width="264" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Немаш кориснички профил?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcx-6s-g8d">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Немаш кориснички профил?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcx-6s-g8d" customClass="DFCLabel" customModule="DFC" customModuleProvider="target">
                                 <rect key="frame" x="103.5" y="619" width="207" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmk-c0-q3Y" customClass="DFCButton" customModule="DFC" customModuleProvider="target">
-                                <rect key="frame" x="160" y="645" width="94" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmk-c0-q3Y" customClass="DFCButton" customModule="DFC" customModuleProvider="target">
+                                <rect key="frame" x="125" y="645" width="164" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="164" id="7vS-36-ciP"/>
+                                </constraints>
                                 <state key="normal" title="Login"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zgz-WG-85F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="SET-RO-VE9" firstAttribute="leading" secondItem="zgz-WG-85F" secondAttribute="leading" constant="127" id="2ON-PR-9Rn"/>
                             <constraint firstItem="OGH-FK-DQC" firstAttribute="top" secondItem="zgz-WG-85F" secondAttribute="top" constant="281" id="5sb-H0-qxl"/>
                             <constraint firstItem="zgz-WG-85F" firstAttribute="trailing" secondItem="OGH-FK-DQC" secondAttribute="trailing" constant="35" id="929-MI-abm"/>
-                            <constraint firstItem="SET-RO-VE9" firstAttribute="leading" secondItem="zgz-WG-85F" secondAttribute="leading" constant="107" id="CUg-Gp-boD"/>
                             <constraint firstItem="SET-RO-VE9" firstAttribute="centerX" secondItem="zgz-WG-85F" secondAttribute="centerX" id="HIA-YM-fAW"/>
                             <constraint firstItem="OGH-FK-DQC" firstAttribute="centerX" secondItem="zgz-WG-85F" secondAttribute="centerX" id="IOW-6v-BqD"/>
                             <constraint firstItem="0Zr-fM-YI1" firstAttribute="centerX" secondItem="zgz-WG-85F" secondAttribute="centerX" id="IkD-Tp-4bV"/>
@@ -71,20 +75,24 @@
                             <constraint firstItem="zgz-WG-85F" firstAttribute="trailing" secondItem="Noz-NE-1lQ" secondAttribute="trailing" constant="35" id="OmC-6y-lpm"/>
                             <constraint firstItem="SET-RO-VE9" firstAttribute="top" secondItem="zgz-WG-85F" secondAttribute="top" constant="466" id="VQA-bP-glE"/>
                             <constraint firstItem="zgz-WG-85F" firstAttribute="trailing" secondItem="0Zr-fM-YI1" secondAttribute="trailing" constant="75" id="Yj1-eK-wda"/>
+                            <constraint firstItem="Nmk-c0-q3Y" firstAttribute="leading" secondItem="zgz-WG-85F" secondAttribute="leading" constant="125" id="aJz-ay-zq8"/>
+                            <constraint firstItem="zgz-WG-85F" firstAttribute="trailing" secondItem="Nmk-c0-q3Y" secondAttribute="trailing" constant="125" id="bIf-0C-WWl"/>
                             <constraint firstItem="0Zr-fM-YI1" firstAttribute="leading" secondItem="zgz-WG-85F" secondAttribute="leading" constant="75" id="cnb-9G-4o3"/>
+                            <constraint firstItem="zgz-WG-85F" firstAttribute="trailing" secondItem="SET-RO-VE9" secondAttribute="trailing" constant="127" id="d8C-At-des"/>
                             <constraint firstItem="Nmk-c0-q3Y" firstAttribute="top" secondItem="Fcx-6s-g8d" secondAttribute="bottom" constant="8" symbolic="YES" id="fKO-go-mya"/>
                             <constraint firstItem="Fcx-6s-g8d" firstAttribute="centerX" secondItem="zgz-WG-85F" secondAttribute="centerX" id="g29-UL-ha9"/>
                             <constraint firstItem="Fcx-6s-g8d" firstAttribute="top" secondItem="SET-RO-VE9" secondAttribute="bottom" constant="70" id="h7a-Ca-3GT"/>
                             <constraint firstItem="OGH-FK-DQC" firstAttribute="leading" secondItem="zgz-WG-85F" secondAttribute="leading" constant="35" id="hdF-Fj-xlv"/>
                             <constraint firstItem="Nmk-c0-q3Y" firstAttribute="centerX" secondItem="zgz-WG-85F" secondAttribute="centerX" id="mng-tJ-UTC"/>
                             <constraint firstItem="Noz-NE-1lQ" firstAttribute="top" secondItem="zgz-WG-85F" secondAttribute="top" constant="368" id="n8a-Lh-BBH"/>
-                            <constraint firstItem="zgz-WG-85F" firstAttribute="trailing" secondItem="SET-RO-VE9" secondAttribute="trailing" constant="107" id="qyN-Nj-YUv"/>
                             <constraint firstItem="Noz-NE-1lQ" firstAttribute="leading" secondItem="zgz-WG-85F" secondAttribute="leading" constant="35" id="veF-9c-y8g"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="BigLoginButton" destination="SET-RO-VE9" id="d6K-UI-v9T"/>
                         <outlet property="EmailTextField" destination="OGH-FK-DQC" id="0Zc-zv-aPL"/>
+                        <outlet property="LoginLabel" destination="0Zr-fM-YI1" id="lcA-B7-aoF"/>
+                        <outlet property="NotRegistered" destination="Fcx-6s-g8d" id="0oN-UI-LbH"/>
                         <outlet property="PasswordTextField" destination="Noz-NE-1lQ" id="Ecj-wO-XXj"/>
                         <outlet property="RegisterButton" destination="Nmk-c0-q3Y" id="Heh-13-aLf"/>
                     </connections>
