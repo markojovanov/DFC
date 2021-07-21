@@ -2,8 +2,8 @@ import UIKit
 
 public class DFCSetterButton: UIButton {
     public func configure(title: NSString,
-                          fontSizeBig: CGFloat = 18.0,
-                          fontSizeSmall: CGFloat = 13.0,
+                          fontSizeBig: CGFloat = 17.0,
+                          fontSizeSmall: CGFloat = 12.0,
                           color: UIColor = .white,
                           backgroundColor: CGColor = .init(red:0.92, green:0.06, blue:1, alpha:1.0),
                           cornerRadius: CGFloat = 5,
@@ -30,10 +30,10 @@ public class DFCSetterButton: UIButton {
                 substring1 = buttonText.substring(to: newlineRange.location)
                 substring2 = buttonText.substring(from: newlineRange.location)
             }
-            let font1: UIFont = UIFont(name: "Arial", size: fontSizeBig)!
+        let font1: UIFont = UIFont.systemFont(ofSize: fontSizeBig)
             let attributes1 = [NSMutableAttributedString.Key.font: font1]
             let attrString1 = NSMutableAttributedString(string: substring1, attributes: attributes1)
-            let font2: UIFont = UIFont(name: "Arial", size: fontSizeSmall)!
+        let font2: UIFont = UIFont.systemFont(ofSize: fontSizeSmall)
             let attributes2 = [NSMutableAttributedString.Key.font: font2]
             let attrString2 = NSMutableAttributedString(string: substring2, attributes: attributes2)
             attrString1.append(attrString2)

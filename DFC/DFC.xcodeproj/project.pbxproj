@@ -153,8 +153,8 @@
 		28A42B3226A1B3DB00993B8D /* TabController */ = {
 			isa = PBXGroup;
 			children = (
-				28A42B3326A1B3FC00993B8D /* TabController.storyboard */,
 				28A42B3626A1B42300993B8D /* TabController.swift */,
+				28A42B3326A1B3FC00993B8D /* TabController.storyboard */,
 			);
 			path = TabController;
 			sourceTree = "<group>";

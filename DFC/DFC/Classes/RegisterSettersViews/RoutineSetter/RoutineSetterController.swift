@@ -14,22 +14,22 @@ class RoutineSetterController: UIViewController  {
     }
     @IBOutlet var WeightLossButton: DFCSetterButton! {
         didSet {
-            WeightLossButton.configure(title: "Загуба на килограми\nФокусирање на кардио вежби и вежби со голем интензитет")
+            WeightLossButton.configure(title: "Загуба на килограми\nФокус на кардио вежби и тренинг со голем интензитет")
         }
     }
     @IBOutlet var StayFitButton: DFCSetterButton! {
         didSet {
-            StayFitButton.configure(title: "Одржување на форма\nФокусирање на склоп од повеќе кардио вежби и вежби за сила")
+            StayFitButton.configure(title: "Одржување на форма\nФокус на склоп од повеќе кардио вежби и вежби за сила")
         }
     }
     @IBOutlet var GainMusclesButton: DFCSetterButton! {
         didSet {
-            GainMusclesButton.configure(title: "Добивање мускули\nФокусирање на добивање на мускулна маса преку зголемен број повторувања")
+            GainMusclesButton.configure(title: "Развивање на мускулатура\nФокус на добивање на мускулна маса преку зголемен број повторувања")
         }
     }
     @IBOutlet var AthleteButton: DFCSetterButton! {
         didSet {
-            AthleteButton.configure(title: "Тренирај како атлета\nФокус на добивање максимум од твоето тело")
+            AthleteButton.configure(title: "Тренирај како атлета\nФокус на добивање максимум од себе")
         }
     }
     override func viewDidLoad() {
