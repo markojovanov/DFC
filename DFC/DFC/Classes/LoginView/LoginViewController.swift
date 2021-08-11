@@ -4,6 +4,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     public static func create() -> UIViewController {
         let bundle = Bundle(for: LoginViewController.self)
         let controller = UIStoryboard(name: "LoginViewController", bundle: bundle).instantiateInitialViewController() as! LoginViewController
+        controller.tabBarItem = UITabBarItem(title: "Login", image: UIImage(named: "Login"), tag: 0)
         return controller
     }
     @IBOutlet var LoginLabel: DFCLabel! {
@@ -43,7 +44,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red:0.91, green:0.91, blue:0.91, alpha:1.0)
-        tabBarItem = UITabBarItem(title: "Login", image: UIImage(named: "Login"), tag: 0)
         setUpDelegates()
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

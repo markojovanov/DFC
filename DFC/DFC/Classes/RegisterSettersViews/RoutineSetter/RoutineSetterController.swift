@@ -5,6 +5,7 @@ class RoutineSetterController: UIViewController  {
     public static func create() -> UIViewController {
         let bundle = Bundle(for: RoutineSetterController.self)
         let controller = UIStoryboard(name: "RoutineSetterController", bundle: bundle).instantiateInitialViewController() as! UINavigationController
+        controller.tabBarItem = UITabBarItem(title: "RoutineSetter", image: UIImage(named: "Register"), tag: 2)
         return controller
     }
     @IBOutlet var GoalLabel: DFCLabel! {
@@ -35,8 +36,6 @@ class RoutineSetterController: UIViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red:0.91, green:0.91, blue:0.91, alpha:1.0)
-        //Delete line 15 -> Not needing TabBarController
-        tabBarItem = UITabBarItem(title: "RoutineSetter", image: UIImage(named: "Register"), tag: 2)
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "Back"), style: .plain, target: self, action: nil)
         let progressBarView = UIView(frame: CGRect(x: 0,y: 0,width: 200,height: 45))
         progressBarView.backgroundColor = .white

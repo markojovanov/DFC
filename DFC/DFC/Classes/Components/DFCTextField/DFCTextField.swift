@@ -9,7 +9,8 @@ public class DFCTextField: UITextField {
                           borderWidth: CGFloat = 1.0,
                           backgroundColor: UIColor = UIColor(red:0.91, green:0.91, blue:0.91, alpha:1.0)) {
         self.autocorrectionType = .no
-        self.layer.cornerRadius = 5.0
+        self.layer.cornerRadius = 25.0
+        self.clipsToBounds = true
         configurePlaceHolder(placeHolder: placeHolder)
         configureSecureTextEntry(secureTextEntry: secureTextEntry)
         configureFontColor(fontColor: fontColor)

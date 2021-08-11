@@ -10,6 +10,8 @@
 		2800866926987BBD003A8128 /* DFCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800866826987BBD003A8128 /* DFCButton.swift */; };
 		2800868F269F17C2003A8128 /* DFCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800868E269F17C2003A8128 /* DFCTextField.swift */; };
 		280086B526A09FB5003A8128 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280086B426A09FB5003A8128 /* LoginViewController.swift */; };
+		282B843A26BD66830019A105 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282B843926BD66830019A105 /* CollectionView.swift */; };
+		282B843D26BD67440019A105 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282B843C26BD67440019A105 /* CollectionViewCell.swift */; };
 		28380513268F52FC00960988 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28380512268F52FC00960988 /* AppDelegate.swift */; };
 		28380515268F52FC00960988 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28380514268F52FC00960988 /* SceneDelegate.swift */; };
 		28380517268F52FC00960988 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28380516268F52FC00960988 /* RegisterViewController.swift */; };
@@ -22,13 +24,18 @@
 		28A42B3426A1B3FC00993B8D /* TabController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A42B3326A1B3FC00993B8D /* TabController.storyboard */; };
 		28A42B3726A1B42300993B8D /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A42B3626A1B42300993B8D /* TabController.swift */; };
 		28A42B3D26A1B5DC00993B8D /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A42B3C26A1B5DC00993B8D /* RegisterViewController.storyboard */; };
-		28A42B4026A1B5E700993B8D /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A42B3F26A1B5E700993B8D /* LoginViewController.storyboard */; };
+		28B2D6BD26A992CB009E3C6F /* DFCSetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B2D6BC26A992CB009E3C6F /* DFCSetterView.swift */; };
+		28B2D6C026A9930F009E3C6F /* DFCSetterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B2D6BF26A9930F009E3C6F /* DFCSetterView.xib */; };
+		28B2D6C326A9949B009E3C6F /* DFCSetterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B2D6C226A9949B009E3C6F /* DFCSetterModel.swift */; };
+		28BE02D526A88CF80089C02F /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BE02D426A88CF80089C02F /* LoginViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2800866826987BBD003A8128 /* DFCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFCButton.swift; sourceTree = "<group>"; };
 		2800868E269F17C2003A8128 /* DFCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFCTextField.swift; sourceTree = "<group>"; };
 		280086B426A09FB5003A8128 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		282B843926BD66830019A105 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		282B843C26BD67440019A105 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		2838050F268F52FC00960988 /* DFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28380512268F52FC00960988 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28380514268F52FC00960988 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +50,10 @@
 		28A42B3326A1B3FC00993B8D /* TabController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabController.storyboard; sourceTree = "<group>"; };
 		28A42B3626A1B42300993B8D /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		28A42B3C26A1B5DC00993B8D /* RegisterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
-		28A42B3F26A1B5E700993B8D /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LoginViewController.storyboard; path = DFC/Classes/RegisterView/LoginViewController.storyboard; sourceTree = SOURCE_ROOT; };
+		28B2D6BC26A992CB009E3C6F /* DFCSetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFCSetterView.swift; sourceTree = "<group>"; };
+		28B2D6BF26A9930F009E3C6F /* DFCSetterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DFCSetterView.xib; sourceTree = "<group>"; };
+		28B2D6C226A9949B009E3C6F /* DFCSetterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFCSetterModel.swift; sourceTree = "<group>"; };
+		28BE02D426A88CF80089C02F /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,7 @@
 		2800866526987B7F003A8128 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				282B843826BD666D0019A105 /* CollectionView */,
 				288D40F226A5A4DD0021ED89 /* RegisterSettersViews */,
 				28A42B3B26A1B5C000993B8D /* RegisterView */,
 				28A42B3A26A1B5B600993B8D /* LoginView */,
@@ -72,6 +83,7 @@
 		2800866626987B8B003A8128 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				28B2D6BB26A992BB009E3C6F /* DFCView */,
 				288D40E926A59DE30021ED89 /* DFCLabel */,
 				2800868D269F17AA003A8128 /* DFCTextField */,
 				2800866726987BA0003A8128 /* DFCButton */,
@@ -94,6 +106,15 @@
 				2800868E269F17C2003A8128 /* DFCTextField.swift */,
 			);
 			path = DFCTextField;
+			sourceTree = "<group>";
+		};
+		282B843826BD666D0019A105 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				282B843926BD66830019A105 /* CollectionView.swift */,
+				282B843C26BD67440019A105 /* CollectionViewCell.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		28380506268F52FC00960988 = {
@@ -162,8 +183,8 @@
 		28A42B3A26A1B5B600993B8D /* LoginView */ = {
 			isa = PBXGroup;
 			children = (
+				28BE02D426A88CF80089C02F /* LoginViewController.storyboard */,
 				280086B426A09FB5003A8128 /* LoginViewController.swift */,
-				28A42B3F26A1B5E700993B8D /* LoginViewController.storyboard */,
 			);
 			path = LoginView;
 			sourceTree = "<group>";
@@ -175,6 +196,16 @@
 				28A42B3C26A1B5DC00993B8D /* RegisterViewController.storyboard */,
 			);
 			path = RegisterView;
+			sourceTree = "<group>";
+		};
+		28B2D6BB26A992BB009E3C6F /* DFCView */ = {
+			isa = PBXGroup;
+			children = (
+				28B2D6BC26A992CB009E3C6F /* DFCSetterView.swift */,
+				28B2D6BF26A9930F009E3C6F /* DFCSetterView.xib */,
+				28B2D6C226A9949B009E3C6F /* DFCSetterModel.swift */,
+			);
+			path = DFCView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,11 +265,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28B2D6C026A9930F009E3C6F /* DFCSetterView.xib in Resources */,
 				288D40F826A5A53B0021ED89 /* RoutineSetterController.storyboard in Resources */,
 				2838051F268F530500960988 /* LaunchScreen.storyboard in Resources */,
 				2838051C268F530500960988 /* Assets.xcassets in Resources */,
 				28A42B3D26A1B5DC00993B8D /* RegisterViewController.storyboard in Resources */,
-				28A42B4026A1B5E700993B8D /* LoginViewController.storyboard in Resources */,
+				28BE02D526A88CF80089C02F /* LoginViewController.storyboard in Resources */,
 				28A42B3426A1B3FC00993B8D /* TabController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,11 +284,15 @@
 			files = (
 				288D40FB26A5C8BA0021ED89 /* DFCSetterButton.swift in Sources */,
 				28A42B3726A1B42300993B8D /* TabController.swift in Sources */,
+				28B2D6BD26A992CB009E3C6F /* DFCSetterView.swift in Sources */,
 				280086B526A09FB5003A8128 /* LoginViewController.swift in Sources */,
 				288D40F526A5A5270021ED89 /* RoutineSetterController.swift in Sources */,
+				282B843A26BD66830019A105 /* CollectionView.swift in Sources */,
 				28380517268F52FC00960988 /* RegisterViewController.swift in Sources */,
 				28380513268F52FC00960988 /* AppDelegate.swift in Sources */,
 				28380515268F52FC00960988 /* SceneDelegate.swift in Sources */,
+				28B2D6C326A9949B009E3C6F /* DFCSetterModel.swift in Sources */,
+				282B843D26BD67440019A105 /* CollectionViewCell.swift in Sources */,
 				2800868F269F17C2003A8128 /* DFCTextField.swift in Sources */,
 				288D40EB26A59DF40021ED89 /* DFCLabel.swift in Sources */,
 				2800866926987BBD003A8128 /* DFCButton.swift in Sources */,
