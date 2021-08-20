@@ -1,4 +1,5 @@
 import UIKit
+import SwiftChart
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     public static func create() -> UIViewController {

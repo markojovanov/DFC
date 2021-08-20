@@ -28,6 +28,7 @@
 		28B2D6C026A9930F009E3C6F /* DFCSetterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B2D6BF26A9930F009E3C6F /* DFCSetterView.xib */; };
 		28B2D6C326A9949B009E3C6F /* DFCSetterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B2D6C226A9949B009E3C6F /* DFCSetterModel.swift */; };
 		28BE02D526A88CF80089C02F /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BE02D426A88CF80089C02F /* LoginViewController.storyboard */; };
+		67D426485F5C4EFCB58151E1 /* Pods_DFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83050331E6692E8E10C2582C /* Pods_DFC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,9 @@
 		28B2D6BF26A9930F009E3C6F /* DFCSetterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DFCSetterView.xib; sourceTree = "<group>"; };
 		28B2D6C226A9949B009E3C6F /* DFCSetterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFCSetterModel.swift; sourceTree = "<group>"; };
 		28BE02D426A88CF80089C02F /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		83050331E6692E8E10C2582C /* Pods_DFC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DFC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA51F7BCF9993D98609C8302 /* Pods-DFC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFC.release.xcconfig"; path = "Target Support Files/Pods-DFC/Pods-DFC.release.xcconfig"; sourceTree = "<group>"; };
+		F5FD1C34C67293631E1ED418 /* Pods-DFC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFC.debug.xcconfig"; path = "Target Support Files/Pods-DFC/Pods-DFC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D426485F5C4EFCB58151E1 /* Pods_DFC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +127,8 @@
 			children = (
 				28380511268F52FC00960988 /* DFC */,
 				28380510268F52FC00960988 /* Products */,
+				2C1DC912C54D046F5AFBBFED /* Pods */,
+				7BF98551CB3C88DA0D09C8F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -208,6 +215,24 @@
 			path = DFCView;
 			sourceTree = "<group>";
 		};
+		2C1DC912C54D046F5AFBBFED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5FD1C34C67293631E1ED418 /* Pods-DFC.debug.xcconfig */,
+				CA51F7BCF9993D98609C8302 /* Pods-DFC.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7BF98551CB3C88DA0D09C8F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83050331E6692E8E10C2582C /* Pods_DFC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28380523268F530500960988 /* Build configuration list for PBXNativeTarget "DFC" */;
 			buildPhases = (
+				DCC48A6E5BEC90B203BADBE5 /* [CP] Check Pods Manifest.lock */,
 				2838050B268F52FC00960988 /* Sources */,
 				2838050C268F52FC00960988 /* Frameworks */,
 				2838050D268F52FC00960988 /* Resources */,
+				20DED51998C0EBB9AB29AE26 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,6 +303,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20DED51998C0EBB9AB29AE26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DFC/Pods-DFC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DFC/Pods-DFC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DFC/Pods-DFC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCC48A6E5BEC90B203BADBE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DFC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2838050B268F52FC00960988 /* Sources */ = {
@@ -431,6 +500,7 @@
 		};
 		28380524268F530500960988 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5FD1C34C67293631E1ED418 /* Pods-DFC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -449,6 +519,7 @@
 		};
 		28380525268F530500960988 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA51F7BCF9993D98609C8302 /* Pods-DFC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
