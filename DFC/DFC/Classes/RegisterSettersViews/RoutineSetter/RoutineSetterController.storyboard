@@ -119,10 +119,10 @@
             </objects>
             <point key="canvasLocation" x="1099" y="-384"/>
         </scene>
-        <!--Collection View-->
+        <!--4CollectionView-->
         <scene sceneID="PYy-ml-yjo">
             <objects>
-                <viewController id="GiL-yB-sfq" customClass="CollectionView" customModule="DFC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="4CollectionView" id="GiL-yB-sfq" customClass="CollectionView" customModule="DFC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hNn-wP-qg9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
