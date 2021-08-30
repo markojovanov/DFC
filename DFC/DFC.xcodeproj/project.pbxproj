@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,7 +18,6 @@
 		2838051C268F530500960988 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2838051B268F530500960988 /* Assets.xcassets */; };
 		2838051F268F530500960988 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2838051D268F530500960988 /* LaunchScreen.storyboard */; };
 		288D40EB26A59DF40021ED89 /* DFCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288D40EA26A59DF40021ED89 /* DFCLabel.swift */; };
-		288D40F526A5A5270021ED89 /* RoutineSetterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288D40F426A5A5270021ED89 /* RoutineSetterController.swift */; };
 		288D40F826A5A53B0021ED89 /* RoutineSetterController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 288D40F726A5A53B0021ED89 /* RoutineSetterController.storyboard */; };
 		288D40FB26A5C8BA0021ED89 /* DFCSetterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288D40FA26A5C8BA0021ED89 /* DFCSetterButton.swift */; };
 		28A42B3426A1B3FC00993B8D /* TabController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A42B3326A1B3FC00993B8D /* TabController.storyboard */; };
@@ -28,6 +27,7 @@
 		28B2D6C026A9930F009E3C6F /* DFCSetterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B2D6BF26A9930F009E3C6F /* DFCSetterView.xib */; };
 		28B2D6C326A9949B009E3C6F /* DFCSetterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B2D6C226A9949B009E3C6F /* DFCSetterModel.swift */; };
 		28BE02D526A88CF80089C02F /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BE02D426A88CF80089C02F /* LoginViewController.storyboard */; };
+		4D1AFBC526DD5CA1007C6B7B /* SetterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1AFBC426DD5CA1007C6B7B /* SetterModel.swift */; };
 		67D426485F5C4EFCB58151E1 /* Pods_DFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83050331E6692E8E10C2582C /* Pods_DFC.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +45,6 @@
 		2838051E268F530500960988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28380520268F530500960988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		288D40EA26A59DF40021ED89 /* DFCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFCLabel.swift; sourceTree = "<group>"; };
-		288D40F426A5A5270021ED89 /* RoutineSetterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineSetterController.swift; sourceTree = "<group>"; };
 		288D40F726A5A53B0021ED89 /* RoutineSetterController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoutineSetterController.storyboard; sourceTree = "<group>"; };
 		288D40FA26A5C8BA0021ED89 /* DFCSetterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFCSetterButton.swift; sourceTree = "<group>"; };
 		28A42B3326A1B3FC00993B8D /* TabController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabController.storyboard; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		28B2D6BF26A9930F009E3C6F /* DFCSetterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DFCSetterView.xib; sourceTree = "<group>"; };
 		28B2D6C226A9949B009E3C6F /* DFCSetterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFCSetterModel.swift; sourceTree = "<group>"; };
 		28BE02D426A88CF80089C02F /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		4D1AFBC426DD5CA1007C6B7B /* SetterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetterModel.swift; sourceTree = "<group>"; };
 		83050331E6692E8E10C2582C /* Pods_DFC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DFC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA51F7BCF9993D98609C8302 /* Pods-DFC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFC.release.xcconfig"; path = "Target Support Files/Pods-DFC/Pods-DFC.release.xcconfig"; sourceTree = "<group>"; };
 		F5FD1C34C67293631E1ED418 /* Pods-DFC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFC.debug.xcconfig"; path = "Target Support Files/Pods-DFC/Pods-DFC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +75,7 @@
 		2800866526987B7F003A8128 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4D1AFBC326DD5C91007C6B7B /* Models */,
 				282B843826BD666D0019A105 /* CollectionView */,
 				288D40F226A5A4DD0021ED89 /* RegisterSettersViews */,
 				28A42B3B26A1B5C000993B8D /* RegisterView */,
@@ -172,7 +173,6 @@
 		288D40F326A5A4F00021ED89 /* RoutineSetter */ = {
 			isa = PBXGroup;
 			children = (
-				288D40F426A5A5270021ED89 /* RoutineSetterController.swift */,
 				288D40F726A5A53B0021ED89 /* RoutineSetterController.storyboard */,
 			);
 			path = RoutineSetter;
@@ -221,8 +221,15 @@
 				F5FD1C34C67293631E1ED418 /* Pods-DFC.debug.xcconfig */,
 				CA51F7BCF9993D98609C8302 /* Pods-DFC.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		4D1AFBC326DD5C91007C6B7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D1AFBC426DD5CA1007C6B7B /* SetterModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		7BF98551CB3C88DA0D09C8F2 /* Frameworks */ = {
@@ -355,11 +362,11 @@
 				28A42B3726A1B42300993B8D /* TabController.swift in Sources */,
 				28B2D6BD26A992CB009E3C6F /* DFCSetterView.swift in Sources */,
 				280086B526A09FB5003A8128 /* LoginViewController.swift in Sources */,
-				288D40F526A5A5270021ED89 /* RoutineSetterController.swift in Sources */,
 				282B843A26BD66830019A105 /* CollectionView.swift in Sources */,
 				28380517268F52FC00960988 /* RegisterViewController.swift in Sources */,
 				28380513268F52FC00960988 /* AppDelegate.swift in Sources */,
 				28380515268F52FC00960988 /* SceneDelegate.swift in Sources */,
+				4D1AFBC526DD5CA1007C6B7B /* SetterModel.swift in Sources */,
 				28B2D6C326A9949B009E3C6F /* DFCSetterModel.swift in Sources */,
 				282B843D26BD67440019A105 /* CollectionViewCell.swift in Sources */,
 				2800868F269F17C2003A8128 /* DFCTextField.swift in Sources */,
@@ -506,6 +513,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DFC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -525,6 +533,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DFC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

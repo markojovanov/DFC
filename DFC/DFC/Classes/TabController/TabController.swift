@@ -5,7 +5,7 @@ public class TabController : UITabBarController {
         let registerViewController = RegisterViewController.create()
         let loginViewController = LoginViewController.create()
         //Delete line 8 -> Not needing TabBarController
-        let routineSetterController = RoutineSetterController.create()
+        let routineSetterController = CollectionView.create()
         insertTabBars(viewControllers: [registerViewController,loginViewController,routineSetterController])
     }
     private func insertTabBars(viewControllers: [UIViewController]) {
