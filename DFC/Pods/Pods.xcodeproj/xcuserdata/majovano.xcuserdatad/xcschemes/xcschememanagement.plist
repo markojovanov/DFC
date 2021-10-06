@@ -4,16 +4,18 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-DFC.xcscheme_^#shared#^_</key>
+		<key>Pods-DFC.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>SwiftChart.xcscheme_^#shared#^_</key>
+		<key>SwiftChart.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict/>
 </dict>
 </plist>

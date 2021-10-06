@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,12 +28,16 @@
 		28B2D6C326A9949B009E3C6F /* DFCSetterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B2D6C226A9949B009E3C6F /* DFCSetterModel.swift */; };
 		28BE02D526A88CF80089C02F /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BE02D426A88CF80089C02F /* LoginViewController.storyboard */; };
 		4D1AFBC526DD5CA1007C6B7B /* SetterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1AFBC426DD5CA1007C6B7B /* SetterModel.swift */; };
+		4D3AC71526F38E210065755E /* model.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D3AC71426F38E210065755E /* model.json */; };
+		4D857F0C270DD1CB0096E818 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D857F0B270DD1CB0096E818 /* Texts.swift */; };
+		4D857F0E270DD2E30096E818 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D857F0D270DD2E30096E818 /* Extensions.swift */; };
+		4D8DAB68270CD4D900F94E9F /* libSwiftChart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8DAB67270CD4D900F94E9F /* libSwiftChart.a */; };
 		4D947C2826DD8A0C009C1295 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D947C2726DD8A0C009C1295 /* ProgressViewController.swift */; };
 		4D947C2A26DD8A58009C1295 /* ProgressViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D947C2926DD8A58009C1295 /* ProgressViewStoryboard.storyboard */; };
 		4D947C2C26DD97AD009C1295 /* ProgressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D947C2B26DD97AD009C1295 /* ProgressModel.swift */; };
 		4D947C2E26DD99B6009C1295 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D947C2D26DD99B6009C1295 /* TableViewCell.swift */; };
 		4D947C3026DD9C1C009C1295 /* AddNewWeightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D947C2F26DD9C1C009C1295 /* AddNewWeightController.swift */; };
-		67D426485F5C4EFCB58151E1 /* Pods_DFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83050331E6692E8E10C2582C /* Pods_DFC.framework */; };
+		6EBFD8033B89E0C4BCD33353 /* libPods-DFC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1036DAE4E16DD5C27088F55 /* libPods-DFC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +52,7 @@
 		28380516268F52FC00960988 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		2838051B268F530500960988 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2838051E268F530500960988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		28380520268F530500960988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28380520268F530500960988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../../../Documents/DFC/DFC/src/resources/Info.plist; sourceTree = DEVELOPER_DIR; };
 		288D40EA26A59DF40021ED89 /* DFCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFCLabel.swift; sourceTree = "<group>"; };
 		288D40F726A5A53B0021ED89 /* RoutineSetterController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoutineSetterController.storyboard; sourceTree = "<group>"; };
 		288D40FA26A5C8BA0021ED89 /* DFCSetterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFCSetterButton.swift; sourceTree = "<group>"; };
@@ -60,12 +64,17 @@
 		28B2D6C226A9949B009E3C6F /* DFCSetterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFCSetterModel.swift; sourceTree = "<group>"; };
 		28BE02D426A88CF80089C02F /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		4D1AFBC426DD5CA1007C6B7B /* SetterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetterModel.swift; sourceTree = "<group>"; };
+		4D3AC71426F38E210065755E /* model.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = model.json; sourceTree = "<group>"; };
+		4D857F0B270DD1CB0096E818 /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
+		4D857F0D270DD2E30096E818 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4D8DAB60270CCD8400F94E9F /* SwiftChart */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftChart; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D8DAB67270CD4D900F94E9F /* libSwiftChart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSwiftChart.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D947C2726DD8A0C009C1295 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		4D947C2926DD8A58009C1295 /* ProgressViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProgressViewStoryboard.storyboard; sourceTree = "<group>"; };
 		4D947C2B26DD97AD009C1295 /* ProgressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressModel.swift; sourceTree = "<group>"; };
 		4D947C2D26DD99B6009C1295 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		4D947C2F26DD9C1C009C1295 /* AddNewWeightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewWeightController.swift; sourceTree = "<group>"; };
-		83050331E6692E8E10C2582C /* Pods_DFC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DFC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1036DAE4E16DD5C27088F55 /* libPods-DFC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DFC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA51F7BCF9993D98609C8302 /* Pods-DFC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFC.release.xcconfig"; path = "Target Support Files/Pods-DFC/Pods-DFC.release.xcconfig"; sourceTree = "<group>"; };
 		F5FD1C34C67293631E1ED418 /* Pods-DFC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFC.debug.xcconfig"; path = "Target Support Files/Pods-DFC/Pods-DFC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,29 +84,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67D426485F5C4EFCB58151E1 /* Pods_DFC.framework in Frameworks */,
+				4D8DAB68270CD4D900F94E9F /* libSwiftChart.a in Frameworks */,
+				6EBFD8033B89E0C4BCD33353 /* libPods-DFC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2800866526987B7F003A8128 /* Classes */ = {
+		2800866526987B7F003A8128 /* app */ = {
 			isa = PBXGroup;
 			children = (
-				4D947C2626DD89F6009C1295 /* ProgressView */,
-				4D1AFBC326DD5C91007C6B7B /* Models */,
-				282B843826BD666D0019A105 /* CollectionView */,
-				288D40F226A5A4DD0021ED89 /* RegisterSettersViews */,
-				28A42B3B26A1B5C000993B8D /* RegisterView */,
-				28A42B3A26A1B5B600993B8D /* LoginView */,
-				28A42B3226A1B3DB00993B8D /* TabController */,
-				2800866626987B8B003A8128 /* Components */,
+				4D857F09270DD17D0096E818 /* shared */,
+				4D857F0F270DD31E0096E818 /* root */,
+				4D857F0A270DD1BF0096E818 /* util */,
 			);
-			path = Classes;
+			path = app;
 			sourceTree = "<group>";
 		};
-		2800866626987B8B003A8128 /* Components */ = {
+		2800866626987B8B003A8128 /* components */ = {
 			isa = PBXGroup;
 			children = (
 				28B2D6BB26A992BB009E3C6F /* DFCView */,
@@ -105,7 +110,7 @@
 				2800868D269F17AA003A8128 /* DFCTextField */,
 				2800866726987BA0003A8128 /* DFCButton */,
 			);
-			path = Components;
+			path = components;
 			sourceTree = "<group>";
 		};
 		2800866726987BA0003A8128 /* DFCButton */ = {
@@ -125,19 +130,19 @@
 			path = DFCTextField;
 			sourceTree = "<group>";
 		};
-		282B843826BD666D0019A105 /* CollectionView */ = {
+		282B843826BD666D0019A105 /* collectionView */ = {
 			isa = PBXGroup;
 			children = (
 				282B843926BD66830019A105 /* CollectionView.swift */,
 				282B843C26BD67440019A105 /* CollectionViewCell.swift */,
 			);
-			path = CollectionView;
+			path = collectionView;
 			sourceTree = "<group>";
 		};
 		28380506268F52FC00960988 = {
 			isa = PBXGroup;
 			children = (
-				28380511268F52FC00960988 /* DFC */,
+				28380511268F52FC00960988 /* src */,
 				28380510268F52FC00960988 /* Products */,
 				2C1DC912C54D046F5AFBBFED /* Pods */,
 				7BF98551CB3C88DA0D09C8F2 /* Frameworks */,
@@ -152,17 +157,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		28380511268F52FC00960988 /* DFC */ = {
+		28380511268F52FC00960988 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				2800866526987B7F003A8128 /* Classes */,
-				28380512268F52FC00960988 /* AppDelegate.swift */,
-				28380514268F52FC00960988 /* SceneDelegate.swift */,
-				2838051B268F530500960988 /* Assets.xcassets */,
-				2838051D268F530500960988 /* LaunchScreen.storyboard */,
-				28380520268F530500960988 /* Info.plist */,
+				4D857F10270DD3710096E818 /* core */,
+				2800866526987B7F003A8128 /* app */,
+				4D23C4CC270CBA2E0017B697 /* resources */,
 			);
-			path = DFC;
+			path = src;
 			sourceTree = "<group>";
 		};
 		288D40E926A59DE30021ED89 /* DFCLabel */ = {
@@ -173,47 +175,38 @@
 			path = DFCLabel;
 			sourceTree = "<group>";
 		};
-		288D40F226A5A4DD0021ED89 /* RegisterSettersViews */ = {
+		288D40F226A5A4DD0021ED89 /* registerSettersViews */ = {
 			isa = PBXGroup;
 			children = (
-				288D40F326A5A4F00021ED89 /* RoutineSetter */,
+				288D40F326A5A4F00021ED89 /* routineSetter */,
 			);
-			path = RegisterSettersViews;
+			path = registerSettersViews;
 			sourceTree = "<group>";
 		};
-		288D40F326A5A4F00021ED89 /* RoutineSetter */ = {
+		288D40F326A5A4F00021ED89 /* routineSetter */ = {
 			isa = PBXGroup;
 			children = (
 				288D40F726A5A53B0021ED89 /* RoutineSetterController.storyboard */,
 			);
-			path = RoutineSetter;
+			path = routineSetter;
 			sourceTree = "<group>";
 		};
-		28A42B3226A1B3DB00993B8D /* TabController */ = {
+		28A42B3226A1B3DB00993B8D /* tabController */ = {
 			isa = PBXGroup;
 			children = (
 				28A42B3626A1B42300993B8D /* TabController.swift */,
 				28A42B3326A1B3FC00993B8D /* TabController.storyboard */,
 			);
-			path = TabController;
+			path = tabController;
 			sourceTree = "<group>";
 		};
-		28A42B3A26A1B5B600993B8D /* LoginView */ = {
-			isa = PBXGroup;
-			children = (
-				28BE02D426A88CF80089C02F /* LoginViewController.storyboard */,
-				280086B426A09FB5003A8128 /* LoginViewController.swift */,
-			);
-			path = LoginView;
-			sourceTree = "<group>";
-		};
-		28A42B3B26A1B5C000993B8D /* RegisterView */ = {
+		28A42B3B26A1B5C000993B8D /* registerView */ = {
 			isa = PBXGroup;
 			children = (
 				28380516268F52FC00960988 /* RegisterViewController.swift */,
 				28A42B3C26A1B5DC00993B8D /* RegisterViewController.storyboard */,
 			);
-			path = RegisterView;
+			path = registerView;
 			sourceTree = "<group>";
 		};
 		28B2D6BB26A992BB009E3C6F /* DFCView */ = {
@@ -235,16 +228,76 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		4D1AFBC326DD5C91007C6B7B /* Models */ = {
+		4D23C4CC270CBA2E0017B697 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				2838051B268F530500960988 /* Assets.xcassets */,
+				28380520268F530500960988 /* Info.plist */,
+				2838051D268F530500960988 /* LaunchScreen.storyboard */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		4D857F09270DD17D0096E818 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				28380512268F52FC00960988 /* AppDelegate.swift */,
+				28380514268F52FC00960988 /* SceneDelegate.swift */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+		4D857F0A270DD1BF0096E818 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				28A42B3226A1B3DB00993B8D /* tabController */,
+				2800866626987B8B003A8128 /* components */,
+				4D857F0B270DD1CB0096E818 /* Texts.swift */,
+				4D857F0D270DD2E30096E818 /* Extensions.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		4D857F0F270DD31E0096E818 /* root */ = {
+			isa = PBXGroup;
+			children = (
+				4D857F12270DDF160096E818 /* account */,
+				282B843826BD666D0019A105 /* collectionView */,
+				4D947C2626DD89F6009C1295 /* progressView */,
+			);
+			path = root;
+			sourceTree = "<group>";
+		};
+		4D857F10270DD3710096E818 /* core */ = {
 			isa = PBXGroup;
 			children = (
 				4D1AFBC426DD5CA1007C6B7B /* SetterModel.swift */,
+				4D3AC71426F38E210065755E /* model.json */,
 				4D947C2B26DD97AD009C1295 /* ProgressModel.swift */,
 			);
-			path = Models;
+			path = core;
 			sourceTree = "<group>";
 		};
-		4D947C2626DD89F6009C1295 /* ProgressView */ = {
+		4D857F11270DD4770096E818 /* loginView */ = {
+			isa = PBXGroup;
+			children = (
+				280086B426A09FB5003A8128 /* LoginViewController.swift */,
+				28BE02D426A88CF80089C02F /* LoginViewController.storyboard */,
+			);
+			path = loginView;
+			sourceTree = "<group>";
+		};
+		4D857F12270DDF160096E818 /* account */ = {
+			isa = PBXGroup;
+			children = (
+				4D857F11270DD4770096E818 /* loginView */,
+				28A42B3B26A1B5C000993B8D /* registerView */,
+				288D40F226A5A4DD0021ED89 /* registerSettersViews */,
+			);
+			path = account;
+			sourceTree = "<group>";
+		};
+		4D947C2626DD89F6009C1295 /* progressView */ = {
 			isa = PBXGroup;
 			children = (
 				4D947C2726DD8A0C009C1295 /* ProgressViewController.swift */,
@@ -252,13 +305,15 @@
 				4D947C2D26DD99B6009C1295 /* TableViewCell.swift */,
 				4D947C2F26DD9C1C009C1295 /* AddNewWeightController.swift */,
 			);
-			path = ProgressView;
+			path = progressView;
 			sourceTree = "<group>";
 		};
 		7BF98551CB3C88DA0D09C8F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				83050331E6692E8E10C2582C /* Pods_DFC.framework */,
+				4D8DAB67270CD4D900F94E9F /* libSwiftChart.a */,
+				4D8DAB60270CCD8400F94E9F /* SwiftChart */,
+				C1036DAE4E16DD5C27088F55 /* libPods-DFC.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -274,7 +329,6 @@
 				2838050B268F52FC00960988 /* Sources */,
 				2838050C268F52FC00960988 /* Frameworks */,
 				2838050D268F52FC00960988 /* Resources */,
-				20DED51998C0EBB9AB29AE26 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -330,29 +384,13 @@
 				28A42B3D26A1B5DC00993B8D /* RegisterViewController.storyboard in Resources */,
 				28BE02D526A88CF80089C02F /* LoginViewController.storyboard in Resources */,
 				28A42B3426A1B3FC00993B8D /* TabController.storyboard in Resources */,
+				4D3AC71526F38E210065755E /* model.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		20DED51998C0EBB9AB29AE26 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DFC/Pods-DFC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DFC/Pods-DFC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DFC/Pods-DFC-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DCC48A6E5BEC90B203BADBE5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,8 +435,10 @@
 				4D947C2826DD8A0C009C1295 /* ProgressViewController.swift in Sources */,
 				282B843D26BD67440019A105 /* CollectionViewCell.swift in Sources */,
 				2800868F269F17C2003A8128 /* DFCTextField.swift in Sources */,
+				4D857F0E270DD2E30096E818 /* Extensions.swift in Sources */,
 				4D947C2E26DD99B6009C1295 /* TableViewCell.swift in Sources */,
 				288D40EB26A59DF40021ED89 /* DFCLabel.swift in Sources */,
+				4D857F0C270DD1CB0096E818 /* Texts.swift in Sources */,
 				2800866926987BBD003A8128 /* DFCButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,7 +580,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DFC/Info.plist;
+				DEVELOPMENT_TEAM = 28C2T5Z9DJ;
+				INFOPLIST_FILE = src/resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -559,8 +600,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DFC/Info.plist;
+				DEVELOPMENT_TEAM = LAA69LK8PF;
+				INFOPLIST_FILE = src/resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -568,6 +611,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Marko.DFC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
