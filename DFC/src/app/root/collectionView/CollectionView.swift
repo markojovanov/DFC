@@ -12,7 +12,7 @@ class CollectionView: UIViewController, UICollectionViewDataSource, UICollection
     @IBOutlet var titleLabel: DFCLabel! {
         didSet {
             titleLabel.configure(title: setterModel.titleLabel)
-        } 
+        }
     }
     @IBOutlet var collectionView: UICollectionView!
     override func viewDidLoad() {

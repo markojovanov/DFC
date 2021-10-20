@@ -2,64 +2,63 @@ import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
-    public static func create() -> UIViewController {
+    static func create() -> UIViewController {
         let bundle = Bundle(for: LoginViewController.self)
-        let controller = UIStoryboard(name: "LoginViewController", bundle: bundle).instantiateInitialViewController() as! LoginViewController
-        controller.tabBarItem = UITabBarItem(title: "Login", image: UIImage(named: "Login"), tag: 0)
+        let controller = UIStoryboard(name: "LoginViewController",
+                                      bundle: bundle)
+            .instantiateInitialViewController() as! LoginViewController
         return controller
     }
     
-    @IBOutlet var LoginLabel: DFCLabel! {
+    //MARK: - IBOutlets
+    
+    @IBOutlet weak var iconImage: DFCImageView!
+    @IBOutlet var loginLabel: DFCLabel! {
         didSet {
-            LoginLabel.configure(title: "НАЈАВИ СЕ")
+            loginLabel.configure(title: Texts.logIn.uppercased())
         }
     }
-    @IBOutlet var NotRegistered: DFCLabel! {
+    @IBOutlet var emailTextField: DFCTextField! {
         didSet {
-            NotRegistered.configure(title: "Немаш кориснички профил?")
-        }
-    }
-    @IBOutlet var EmailTextField: DFCTextField! {
-        didSet {
-            EmailTextField.configure(placeHolder: "Емаил")
+            emailTextField.configure(placeHolder: Texts.email)
         }
     }
     @IBOutlet var PasswordTextField: DFCTextField! {
         didSet {
-            PasswordTextField.configure(placeHolder: "Лозинка",
+            PasswordTextField.configure(placeHolder: Texts.password,
                                         secureTextEntry: true)
-        }
-    }
-    @IBOutlet var RegisterButton: DFCButton! {
-        didSet {
-            RegisterButton.configure(title: "Регистрирај се",
-                                     color: .link,
-                                     backgroundColor: .init(red: 0, green: 0, blue: 0, alpha: 0),
-                                     cornerRadius: 0)
         }
     }
     @IBOutlet var BigLoginButton: DFCButton! {
         didSet {
-            BigLoginButton.configure(title: "Најави се")
+            BigLoginButton.configure(title: Texts.logIn)
         }
     }
+    @IBOutlet var NotRegistered: DFCLabel! {
+        didSet {
+            NotRegistered.configure(title: Texts.notRegistered)
+        }
+    }
+    
+    @IBOutlet var RegisterButton: DFCButton! {
+        didSet {
+            RegisterButton.configure(title: Texts.alreadyRegistered,
+                                     color: .white,
+                                     backgroundColor: .init(red: 0, green: 0, blue: 0, alpha: 0),
+                                     cornerRadius: 0)
+        }
+    }
+    
+    //MARK: - ViewController life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(red:0.91, green:0.91, blue:0.91, alpha:1.0)
+        view.backgroundColor = DFCHelpers.hexStringToUIColor(hex: "#38b6ff")
         setUpDelegates()
     }
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        hideKeyboard()
-    }
-    private func setUpDelegates() {
-        EmailTextField.delegate = self
-        PasswordTextField.delegate = self
-    }
-    private func hideKeyboard() {
-        EmailTextField.endEditing(true)
-        PasswordTextField.endEditing(true)
-    }
+    
+    //MARK: - IBAction
+    
     @IBAction func submitButton(_ sender: Any) {
         let bundle = Bundle(for: RegisterViewController.self)
         let controller = UIStoryboard(name: "RegisterViewController", bundle: bundle).instantiateInitialViewController() as! RegisterViewController
@@ -68,5 +67,21 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         controller.hidesBottomBarWhenPushed = true
         definesPresentationContext = true
         present(controller, animated: true)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        hideKeyboard()
+    }
+    
+    //MARK: - Delegates
+    
+    private func setUpDelegates() {
+        emailTextField.delegate = self
+        PasswordTextField.delegate = self
+    }
+    private func hideKeyboard() {
+        emailTextField.endEditing(true)
+        PasswordTextField.endEditing(true)
     }
 }

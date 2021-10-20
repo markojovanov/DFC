@@ -29,6 +29,8 @@
 		28BE02D526A88CF80089C02F /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BE02D426A88CF80089C02F /* LoginViewController.storyboard */; };
 		4D1AFBC526DD5CA1007C6B7B /* SetterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1AFBC426DD5CA1007C6B7B /* SetterModel.swift */; };
 		4D3AC71526F38E210065755E /* model.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D3AC71426F38E210065755E /* model.json */; };
+		4D61A81C270F58EA00BFA2B3 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D61A81B270F58EA00BFA2B3 /* Welcome.swift */; };
+		4D61A81F270F590300BFA2B3 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D61A81E270F590300BFA2B3 /* Welcome.storyboard */; };
 		4D857F0C270DD1CB0096E818 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D857F0B270DD1CB0096E818 /* Texts.swift */; };
 		4D857F0E270DD2E30096E818 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D857F0D270DD2E30096E818 /* Extensions.swift */; };
 		4D8DAB68270CD4D900F94E9F /* libSwiftChart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8DAB67270CD4D900F94E9F /* libSwiftChart.a */; };
@@ -37,6 +39,8 @@
 		4D947C2C26DD97AD009C1295 /* ProgressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D947C2B26DD97AD009C1295 /* ProgressModel.swift */; };
 		4D947C2E26DD99B6009C1295 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D947C2D26DD99B6009C1295 /* TableViewCell.swift */; };
 		4D947C3026DD9C1C009C1295 /* AddNewWeightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D947C2F26DD9C1C009C1295 /* AddNewWeightController.swift */; };
+		4DCF20402720B43600C4DFF9 /* DFCHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCF203F2720B43600C4DFF9 /* DFCHelpers.swift */; };
+		4DCF20422720BC3E00C4DFF9 /* DFCImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCF20412720BC3E00C4DFF9 /* DFCImageView.swift */; };
 		6EBFD8033B89E0C4BCD33353 /* libPods-DFC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1036DAE4E16DD5C27088F55 /* libPods-DFC.a */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +69,8 @@
 		28BE02D426A88CF80089C02F /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		4D1AFBC426DD5CA1007C6B7B /* SetterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetterModel.swift; sourceTree = "<group>"; };
 		4D3AC71426F38E210065755E /* model.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = model.json; sourceTree = "<group>"; };
+		4D61A81B270F58EA00BFA2B3 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		4D61A81E270F590300BFA2B3 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		4D857F0B270DD1CB0096E818 /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
 		4D857F0D270DD2E30096E818 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4D8DAB60270CCD8400F94E9F /* SwiftChart */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftChart; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +80,8 @@
 		4D947C2B26DD97AD009C1295 /* ProgressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressModel.swift; sourceTree = "<group>"; };
 		4D947C2D26DD99B6009C1295 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		4D947C2F26DD9C1C009C1295 /* AddNewWeightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewWeightController.swift; sourceTree = "<group>"; };
+		4DCF203F2720B43600C4DFF9 /* DFCHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFCHelpers.swift; sourceTree = "<group>"; };
+		4DCF20412720BC3E00C4DFF9 /* DFCImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFCImageView.swift; sourceTree = "<group>"; };
 		C1036DAE4E16DD5C27088F55 /* libPods-DFC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DFC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA51F7BCF9993D98609C8302 /* Pods-DFC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFC.release.xcconfig"; path = "Target Support Files/Pods-DFC/Pods-DFC.release.xcconfig"; sourceTree = "<group>"; };
 		F5FD1C34C67293631E1ED418 /* Pods-DFC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFC.debug.xcconfig"; path = "Target Support Files/Pods-DFC/Pods-DFC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +113,7 @@
 		2800866626987B8B003A8128 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				4DCF20432720C41400C4DFF9 /* DFCImageView */,
 				28B2D6BB26A992BB009E3C6F /* DFCView */,
 				288D40E926A59DE30021ED89 /* DFCLabel */,
 				2800868D269F17AA003A8128 /* DFCTextField */,
@@ -238,6 +247,15 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
+		4D61A81D270F58EE00BFA2B3 /* welcomeView */ = {
+			isa = PBXGroup;
+			children = (
+				4D61A81B270F58EA00BFA2B3 /* Welcome.swift */,
+				4D61A81E270F590300BFA2B3 /* Welcome.storyboard */,
+			);
+			path = welcomeView;
+			sourceTree = "<group>";
+		};
 		4D857F09270DD17D0096E818 /* shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +272,7 @@
 				2800866626987B8B003A8128 /* components */,
 				4D857F0B270DD1CB0096E818 /* Texts.swift */,
 				4D857F0D270DD2E30096E818 /* Extensions.swift */,
+				4DCF203F2720B43600C4DFF9 /* DFCHelpers.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -290,6 +309,7 @@
 		4D857F12270DDF160096E818 /* account */ = {
 			isa = PBXGroup;
 			children = (
+				4D61A81D270F58EE00BFA2B3 /* welcomeView */,
 				4D857F11270DD4770096E818 /* loginView */,
 				28A42B3B26A1B5C000993B8D /* registerView */,
 				288D40F226A5A4DD0021ED89 /* registerSettersViews */,
@@ -306,6 +326,14 @@
 				4D947C2F26DD9C1C009C1295 /* AddNewWeightController.swift */,
 			);
 			path = progressView;
+			sourceTree = "<group>";
+		};
+		4DCF20432720C41400C4DFF9 /* DFCImageView */ = {
+			isa = PBXGroup;
+			children = (
+				4DCF20412720BC3E00C4DFF9 /* DFCImageView.swift */,
+			);
+			path = DFCImageView;
 			sourceTree = "<group>";
 		};
 		7BF98551CB3C88DA0D09C8F2 /* Frameworks */ = {
@@ -380,6 +408,7 @@
 				288D40F826A5A53B0021ED89 /* RoutineSetterController.storyboard in Resources */,
 				2838051F268F530500960988 /* LaunchScreen.storyboard in Resources */,
 				4D947C2A26DD8A58009C1295 /* ProgressViewStoryboard.storyboard in Resources */,
+				4D61A81F270F590300BFA2B3 /* Welcome.storyboard in Resources */,
 				2838051C268F530500960988 /* Assets.xcassets in Resources */,
 				28A42B3D26A1B5DC00993B8D /* RegisterViewController.storyboard in Resources */,
 				28BE02D526A88CF80089C02F /* LoginViewController.storyboard in Resources */,
@@ -421,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D947C3026DD9C1C009C1295 /* AddNewWeightController.swift in Sources */,
+				4DCF20422720BC3E00C4DFF9 /* DFCImageView.swift in Sources */,
 				288D40FB26A5C8BA0021ED89 /* DFCSetterButton.swift in Sources */,
 				28A42B3726A1B42300993B8D /* TabController.swift in Sources */,
 				28B2D6BD26A992CB009E3C6F /* DFCSetterView.swift in Sources */,
@@ -433,6 +463,7 @@
 				4D1AFBC526DD5CA1007C6B7B /* SetterModel.swift in Sources */,
 				28B2D6C326A9949B009E3C6F /* DFCSetterModel.swift in Sources */,
 				4D947C2826DD8A0C009C1295 /* ProgressViewController.swift in Sources */,
+				4D61A81C270F58EA00BFA2B3 /* Welcome.swift in Sources */,
 				282B843D26BD67440019A105 /* CollectionViewCell.swift in Sources */,
 				2800868F269F17C2003A8128 /* DFCTextField.swift in Sources */,
 				4D857F0E270DD2E30096E818 /* Extensions.swift in Sources */,
@@ -440,6 +471,7 @@
 				288D40EB26A59DF40021ED89 /* DFCLabel.swift in Sources */,
 				4D857F0C270DD1CB0096E818 /* Texts.swift in Sources */,
 				2800866926987BBD003A8128 /* DFCButton.swift in Sources */,
+				4DCF20402720B43600C4DFF9 /* DFCHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

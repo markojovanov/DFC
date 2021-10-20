@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Welcome" id="Y6W-OH-hqX" customClass="Welcome" customModule="DFC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Violet Barbell Icon Fitness Logo" translatesAutoresizingMaskIntoConstraints="NO" id="R9g-Ox-JZW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="369"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cx7-qF-mZJ" customClass="DFCButton" customModule="DFC" customModuleProvider="target">
+                                <rect key="frame" x="80" y="463" width="254" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Sgx-I9-00I"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="logIn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zYO-G9-Prq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jG8-rC-eZ3" customClass="DFCButton" customModule="DFC" customModuleProvider="target">
+                                <rect key="frame" x="80" y="575" width="254" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vn3-7n-Rgj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="register:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="w2j-r4-VwX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.19406448133259335" green="0.69456207384486213" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="R9g-Ox-JZW" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="DLA-eB-ZLi"/>
+                            <constraint firstItem="R9g-Ox-JZW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Hjq-4a-J5H"/>
+                            <constraint firstItem="jG8-rC-eZ3" firstAttribute="top" secondItem="Cx7-qF-mZJ" secondAttribute="bottom" constant="62" id="I8C-ZX-8wE"/>
+                            <constraint firstItem="R9g-Ox-JZW" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="NFi-iI-wqC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="R9g-Ox-JZW" secondAttribute="bottom" constant="449" id="Oum-jM-KNo"/>
+                            <constraint firstItem="R9g-Ox-JZW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Qlz-dd-1in"/>
+                            <constraint firstItem="jG8-rC-eZ3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="80" id="WtS-Dh-YRu"/>
+                            <constraint firstItem="Cx7-qF-mZJ" firstAttribute="top" secondItem="R9g-Ox-JZW" secondAttribute="bottom" constant="50" id="aga-cC-b1J"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Cx7-qF-mZJ" secondAttribute="trailing" constant="80" id="bcO-tw-q7t"/>
+                            <constraint firstItem="R9g-Ox-JZW" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="f3P-V7-5bU"/>
+                            <constraint firstItem="R9g-Ox-JZW" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="gkk-UO-evK"/>
+                            <constraint firstItem="R9g-Ox-JZW" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="nJd-Hv-y47"/>
+                            <constraint firstItem="Cx7-qF-mZJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="80" id="nqi-xO-UMp"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jG8-rC-eZ3" secondAttribute="trailing" constant="80" id="u84-x0-bee"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logInButton" destination="Cx7-qF-mZJ" id="Vve-QU-F4X"/>
+                        <outlet property="registerButton" destination="jG8-rC-eZ3" id="yIO-Ku-BDx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.608695652173921" y="10.714285714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Violet Barbell Icon Fitness Logo" width="1500" height="1500"/>
+    </resources>
+</document>

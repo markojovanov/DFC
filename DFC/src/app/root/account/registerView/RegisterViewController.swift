@@ -9,7 +9,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     }
     @IBOutlet var AlreadyRegisterLabel: DFCLabel! {
         didSet {
-            AlreadyRegisterLabel.configure(title: Texts.register)
+            AlreadyRegisterLabel.configure(title: Texts.alreadyRegistered)
         }
     }
     @IBOutlet var RegisterLabel: DFCLabel! {
